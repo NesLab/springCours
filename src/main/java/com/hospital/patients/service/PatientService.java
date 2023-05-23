@@ -13,6 +13,7 @@ public class PatientService {
     {
         String s = patientModel.getNames().stream().filter(i -> i==name)
                 .findAny().orElse("nothing");
+        System.out.println("helloo");
         return s.toUpperCase();
     }
 }
